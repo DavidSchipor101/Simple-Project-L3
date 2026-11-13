@@ -260,3 +260,6 @@ footer {
 		grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
 	}
 }
+@media (max-width: 600px) {
+    #galerie .galerie-grid {
+        grid-template-columns: 1fr;

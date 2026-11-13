@@ -1,30 +1,25 @@
 # Simple Webpage
 
-A clean and modern HTML/CSS webpage with a responsive design.
+O pagină web simplă, realizată cu HTML5 și CSS3, cu un design modern și adaptabil la diferite dimensiuni de ecran.
 
-## Features
+## Caracteristici
 
-- Responsive navigation header
-- Three main sections (Home, About, Contact)
-- Fixed footer
-- Modern styling with hover effects
-- Clean typography and layout
+- Structură semantică HTML5.
+- Secțiuni pentru Home, About, Contact și Galerie.
+- Galerie foto cu trei imagini placeholder.
+- Galerie realizată cu CSS Grid, cu trei coloane pe ecrane mari.
+- Pe ecrane cu lățimea de cel mult 600 px, galeria se afișează pe o singură coloană.
+- Spațiu de `1rem` între imaginile din galerie.
 
-## Files
+## Structura proiectului
 
-- `index.html` - Main HTML structure
-- `styles.css` - Stylesheet with all the styling
-
-## How to Use
-
-1. Open `index.html` in your web browser
-2. Navigate between sections using the header links
-
-## Technologies
-
-- HTML5
-- CSS3
-
----
-
-© 2025 My Simple Webpage
+```text
+proiect/
+├── index.html
+├── styles.css
+└── README.md
+@media (max-width: 600px) {
+    #galerie .galerie-grid {
+        grid-template-columns: 1fr;
+    }
+}
